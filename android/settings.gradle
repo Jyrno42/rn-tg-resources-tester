@@ -1,0 +1,3 @@
+rootProject.name = 'rn_tg_resources_tester'
+
+include ':app'
