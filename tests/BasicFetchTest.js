@@ -26,7 +26,7 @@ class BasicFetchTest extends Component<Props> {
                 onSuccess();
             } else {
                 onError(new Error(`Response does not match expected result: got=${JSON.stringify(result)}`));
-            }            
+            }
         } catch (e) {
             onError(e);
         }

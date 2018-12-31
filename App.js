@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {Button, ScrollView, StyleSheet, Text, View} from 'react-native';
 
+import AbortTest from './tests/AbortTest';
 import BasicFetchTest from './tests/BasicFetchTest';
 
 // TODO: Replace with your ngrock url
@@ -18,6 +19,7 @@ type Props = {};
 
 const allTests = {
   basicFetch: BasicFetchTest,
+  abortTest: AbortTest,
 };
 
 const testKeys = Object.keys(allTests);
