@@ -13,7 +13,7 @@ import AbortTest from './tests/AbortTest';
 import BasicFetchTest from './tests/BasicFetchTest';
 
 // TODO: Replace with your ngrock url
-const API_ROOT = 'https://bb0592a1.ngrok.io'
+const API_ROOT = 'https://a36d0377.ngrok.io';
 
 type Props = {};
 

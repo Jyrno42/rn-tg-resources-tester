@@ -1,8 +1,5 @@
 // @flow
 
-// Compat issue 1: Needed due to https://github.com/facebook/react-native/issues/18115
-import 'abortcontroller-polyfill/dist/abortcontroller-polyfill-only';
-
 import equal from 'deep-equal';
 
 import { Component } from 'react';
@@ -34,7 +31,7 @@ class AbortTest extends Component<Props, State> {
 
         setTimeout(() => {
             controller.abort();
-        }, 100);
+        }, 300);
 
         try {
             await new Resource('/abort', {
@@ -45,7 +42,6 @@ class AbortTest extends Component<Props, State> {
 
             onError(new Error('Request should be aborted!'));         
         } catch (e) {
-            console.error(e);
 
             if (!e || !e.isAbortError) {
                 onError(new Error('Raised error should be an instance of AbortError')); 
